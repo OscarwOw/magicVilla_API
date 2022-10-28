@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33020.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "magicVilla_VillaAPI", "magicVilla_VillaAPI\magicVilla_VillaAPI.csproj", "{15309695-0880-4CCA-9202-769F9EA8EC47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15309695-0880-4CCA-9202-769F9EA8EC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15309695-0880-4CCA-9202-769F9EA8EC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15309695-0880-4CCA-9202-769F9EA8EC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15309695-0880-4CCA-9202-769F9EA8EC47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19D40F00-DBFB-448A-AC25-BD3B9432100D}
+	EndGlobalSection
+EndGlobal
