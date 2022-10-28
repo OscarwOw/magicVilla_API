@@ -7,12 +7,13 @@ namespace magicVilla_VillaAPI.Controllers
     [ApiController]
     public class VillaAPIController : ControllerBase
     {
+        [HttpGet]
         public IEnumerable<Villa> GetVillas()
         {
             return new List<Villa>
             {
                 new Villa {ID=0,Name="chello"},
-                new Villa {ID=0,Name="chello"}
+                new Villa {ID=1,Name="Janko"}
             };
         }
     }
