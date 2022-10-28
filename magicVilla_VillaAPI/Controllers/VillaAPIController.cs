@@ -1,6 +1,10 @@
-﻿namespace magicVilla_VillaAPI.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace magicVilla_VillaAPI.Controllers
 {
-    public class VillaAPIController
+    [ApiController]
+    public class VillaAPIController : ControllerBase
     {
+
     }
 }
