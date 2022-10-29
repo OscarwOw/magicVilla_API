@@ -1,6 +1,12 @@
-﻿namespace magicVilla_VillaAPI.Data
+﻿using magicVilla_VillaAPI.Models.Dto;
+
+namespace magicVilla_VillaAPI.Data
 {
-    public class VillaStore
+    public static class VillaStore
     {
+        public static List<VillaDTO> villaList = new List<VillaDTO>() {
+                new VillaDTO {ID=0,Name="chello"},
+                new VillaDTO {ID=1,Name="Janko"}
+            };
     }
 }
