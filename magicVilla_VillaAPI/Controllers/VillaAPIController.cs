@@ -14,7 +14,7 @@ namespace magicVilla_VillaAPI.Controllers
         {
             return Ok(VillaStore.villaList);
         }
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}",Name="GetVilla")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
@@ -45,7 +45,7 @@ namespace magicVilla_VillaAPI.Controllers
             }
             villaDTO.ID= VillaStore.villaList.OrderByDescending(u => u.ID).FirstOrDefault().ID+1;
             VillaStore.villaList.Add(villaDTO);
-            return Ok(villaDTO);
+            return CreatedAtRoute("GetVilla",new { id = villaDTO.ID},villaDTO);
         }
     }
 }
