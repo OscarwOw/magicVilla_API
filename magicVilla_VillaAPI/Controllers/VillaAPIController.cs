@@ -33,6 +33,9 @@ namespace magicVilla_VillaAPI.Controllers
 
         }
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
         public ActionResult<VillaDTO> CreateVilla([FromBody]VillaDTO villaDTO) 
         {
             if(villaDTO == null)
