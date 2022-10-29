@@ -39,12 +39,12 @@ namespace magicVilla_VillaAPI.Controllers
             {
                 return BadRequest();
             }
-            if (VillaDTO.ID > 0)
+            if (villaDTO.ID > 0)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
             villaDTO.ID= VillaStore.villaList.OrderByDescending(u => u.ID).FirstOrDefault().ID+1;
-            VillaStore.villaList.Add(VillaDTO);
+            VillaStore.villaList.Add(villaDTO);
             return Ok(villaDTO);
         }
     }
