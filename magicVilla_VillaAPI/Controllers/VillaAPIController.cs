@@ -14,7 +14,7 @@ namespace magicVilla_VillaAPI.Controllers
         {
             return VillaStore.villaList;
         }
-        [HttpGet]
+        [HttpGet("id")]
         public IEnumerable<VillaDTO> GetVilla(int id)
         {
             return VillaStore.villaList.FirstOrDefault(u => u.ID == id);
