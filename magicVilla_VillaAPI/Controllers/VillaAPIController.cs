@@ -12,6 +12,7 @@ namespace magicVilla_VillaAPI.Controllers
     {
         private readonly ILogger<VillaAPIController> _logger;
         private readonly ApplicationDatabaseContext _databaseContext;
+        //ja som komentar
         public VillaAPIController(ILogger<VillaAPIController> logger, ApplicationDatabaseContext databaseContext)
         {
             _logger = logger;
